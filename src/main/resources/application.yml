@@ -1,0 +1,19 @@
+server:
+  port: 8090
+  servlet:
+    context-path:
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
+  datasource:
+    name: mywebpage
+    url: jdbc:mysql://localhost:3306/mywebpage
+    username: root
+    password: azsx18327946
+    driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
+
+mybatis:
+  mapper-locations: classpath:Dao/*.xml  #配置映射文件
+  type-aliases-package: com.example.mywebpage.bean #配置实体类
