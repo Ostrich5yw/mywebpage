@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Main-Class: com.example.mywebpage.MywebpageApplication
+Class-Path: HikariCP-3.4.5.jar spring-test-5.2.9.RELEASE.jar jackson-cor
+ e-2.11.2.jar jackson-datatype-jsr310-2.11.2.jar jackson-module-paramete
+ r-names-2.11.2.jar log4j-to-slf4j-2.13.3.jar junit-4.13.jar spring-cont
+ ext-5.2.9.RELEASE.jar log4j-api-2.13.3.jar ecj-3.18.0.jar spring-boot-s
+ tarter-tomcat-2.3.4.RELEASE.jar spring-core-5.2.9.RELEASE.jar logback-c
+ lassic-1.2.3.jar jackson-datatype-jdk8-2.11.2.jar jakarta.annotation-ap
+ i-1.3.5.jar mybatis-spring-boot-autoconfigure-2.1.3.jar jackson-annotat
+ ions-2.11.2.jar spring-boot-2.3.4.RELEASE.jar spring-boot-autoconfigure
+ -2.3.4.RELEASE.jar spring-boot-starter-2.3.4.RELEASE.jar spring-express
+ ion-5.2.9.RELEASE.jar mysql-connector-java-8.0.21.jar jstl-1.2.jar spri
+ ng-webmvc-5.2.9.RELEASE.jar mybatis-spring-2.0.5.jar spring-web-5.2.9.R
+ ELEASE.jar spring-boot-starter-logging-2.3.4.RELEASE.jar spring-aop-5.2
+ .9.RELEASE.jar slf4j-api-1.7.30.jar spring-boot-starter-web-2.3.4.RELEA
+ SE.jar tomcat-embed-jasper-9.0.38.jar spring-jcl-5.2.9.RELEASE.jar spri
+ ng-boot-starter-json-2.3.4.RELEASE.jar hamcrest-2.2.jar mybatis-3.5.5.j
+ ar tomcat-annotations-api-9.0.38.jar logback-core-1.2.3.jar jul-to-slf4
+ j-1.7.30.jar jackson-databind-2.11.2.jar tomcat-embed-websocket-9.0.38.
+ jar spring-boot-starter-jdbc-2.3.4.RELEASE.jar spring-beans-5.2.9.RELEA
+ SE.jar mybatis-spring-boot-starter-2.1.3.jar jakarta.el-3.0.3.jar tomca
+ t-embed-el-9.0.38.jar spring-boot-test-2.3.4.RELEASE.jar spring-jdbc-5.
+ 2.9.RELEASE.jar spring-tx-5.2.9.RELEASE.jar tomcat-embed-core-9.0.38.ja
+ r snakeyaml-1.26.jar spring-boot-devtools-2.3.4.RELEASE.jar hamcrest-co
+ re-2.2.jar
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.mywebpage.dao.UserinformationDao">
+
+    <select id="getInfo" parameterType="String" resultType="com.example.mywebpage.bean.UserBean">
+        SELECT * FROM userinformation WHERE user_name = #{user_name} AND user_password = #{user_password}
+    </select>
+    <select id="setInfo" parameterType="String" resultType="com.example.mywebpage.bean.UserBean">
+       UPDATE userinformation SET user_password = #{user_password} WHERE user_name = #{user_name}
+    </select>
+</mapper>
