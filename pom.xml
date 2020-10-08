@@ -62,6 +62,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-test</artifactId>
         </dependency>
+
+
         <!--devtools热部署-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -82,7 +84,12 @@
             <artifactId>jstl</artifactId>
         </dependency>
         <!--引入Spring Boot内嵌的Tomcat对JSP的解析包-->
-
+        <!--快速实现bean层对象的封装方法-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--快速实现bean层对象的封装方法-->
     </dependencies>
 
     <build>
