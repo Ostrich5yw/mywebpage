@@ -5,5 +5,7 @@
     <select id="getInfo" parameterType="String" resultType="com.example.mywebpage.bean.UserBean">
         SELECT * FROM userinformation WHERE user_name = #{user_name} AND user_password = #{user_password}
     </select>
-
+    <select id="getAll" resultType="com.example.mywebpage.bean.UserBean">
+        SELECT * FROM userinformation
+    </select>
 </mapper>
