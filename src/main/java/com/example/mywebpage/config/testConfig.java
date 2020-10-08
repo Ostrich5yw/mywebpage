@@ -12,7 +12,7 @@ public class testConfig {
         userBean.setUser_id(1);
         userBean.setUser_name("wyw");
         userBean.setUser_password("123");
-        userBean.setUser_signinyear("1977-11-201");
+        userBean.setUser_signinyear("1977-11-20");
         return userBean;
     }
 }
