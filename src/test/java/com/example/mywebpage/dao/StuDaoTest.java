@@ -1,8 +1,7 @@
 package com.example.mywebpage.dao;
 
 import com.example.mywebpage.MywebpageApplicationTests;
-import com.example.mywebpage.bean.UserBean;
-import com.github.pagehelper.Page;
+import com.example.mywebpage.bean.StuBean;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.junit.jupiter.api.Test;
@@ -11,25 +10,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 
-class UserDaoTest extends MywebpageApplicationTests {
+class StuDaoTest extends MywebpageApplicationTests {
     @Autowired
-    private UserDao userDao;
+    private StuDao stuDao;
 
     @Test
     void getAll() {
-        List<UserBean> list = userDao.getAll();
-        for (UserBean u:list) {
+        List<StuBean> list = stuDao.getAll();
+        for (StuBean u:list) {
             System.out.println(u);
         }
     }
     @Test
     void getInfo() {
-        UserBean u= userDao.getInfo("Ostrich5yw", "123");
+        StuBean u= stuDao.getInfo("Ostrich5yw", "123");
         System.out.println(u);
     }
     @Test
     void getUserById() {
-        UserBean u= userDao.getUserById(2);
+        StuBean u= stuDao.getUserById(2);
         System.out.println(u);
     }
     @Test
@@ -37,11 +36,11 @@ class UserDaoTest extends MywebpageApplicationTests {
         //执行分页
         PageHelper.startPage(1,5);
         //执行查询
-        List<UserBean> list = userDao.getAll();
+        List<StuBean> list = stuDao.getAll();
         //封装PageInfo对象
-        PageInfo<UserBean> pageinfo = new PageInfo<>(list);
+        PageInfo<StuBean> pageinfo = new PageInfo<>(list);
         //输出
-        for (UserBean userBean : pageinfo.getList()) {
+        for (StuBean userBean : pageinfo.getList()) {
             System.out.println(userBean);
         }
     }

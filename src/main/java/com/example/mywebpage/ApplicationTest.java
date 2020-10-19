@@ -1,7 +1,7 @@
 package com.example.mywebpage;
 
-import com.example.mywebpage.bean.UserBean;
-import com.example.mywebpage.service.UserService;
+import com.example.mywebpage.bean.StuBean;
+import com.example.mywebpage.service.StuService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +12,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class ApplicationTest {
     @Autowired
-    UserService userService;
+    StuService stuService;
 
     @Test
     public void testlogin(){
-        UserBean uB = userService.Login("Ostrich5yw", "123");
-        System.out.println(uB.getUser_id());
+        StuBean uB = stuService.Login("Ostrich5yw", "123");
+        System.out.println(uB.getStu_id());
     }
 }

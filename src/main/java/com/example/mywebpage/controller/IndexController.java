@@ -1,6 +1,6 @@
 package com.example.mywebpage.controller;
 
-import com.example.mywebpage.bean.UserBean;
+import com.example.mywebpage.bean.StuBean;
 import com.example.mywebpage.properties.testProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 @Controller
 public class IndexController {
     @Resource(name = "testconfig")
-    private UserBean userBean;
+    private StuBean stuBean;
     @Resource(name = "testproperties")
     private testProperties testProperties;
 
@@ -24,8 +24,8 @@ public class IndexController {
 
     @ResponseBody
     @RequestMapping("testconfig")
-    public UserBean test(){
-        return userBean;
+    public StuBean test(){
+        return stuBean;
     }
 
     @ResponseBody
