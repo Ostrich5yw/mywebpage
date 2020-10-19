@@ -9,15 +9,15 @@ spring:
       suffix: .jsp
   datasource:
     name: mywebpage
-    url: jdbc:mysql://localhost:3306/mywebpage?serverTimezone=UTC   #纠正mysql8.0可能出现的时区错误
+    url: jdbc:mysql://localhost:3306/mywebpage?serverTimezone=UTC   #??mysql8.0?????????
     username: root
     password: azsx18327946
-    driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver  #???????
     type: com.alibaba.druid.pool.DruidDataSource
 
 mybatis:
-  mapper-locations: classpath:Dao/*.xml  #配置映射文件
-  type-aliases-package: com.example.mywebpage.bean #配置实体类
+  mapper-locations: classpath:Dao/*.xml  #??????
+  type-aliases-package: com.example.mywebpage.bean #?????
 logging:
   level:
     com.example.mywebpage.dao: DEBUG
