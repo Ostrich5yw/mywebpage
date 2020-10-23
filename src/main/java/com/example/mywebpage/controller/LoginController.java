@@ -38,11 +38,10 @@ public class LoginController {
     @CrossOrigin
     @RequestMapping(value = "loginstu", method = RequestMethod.POST)
     @ResponseBody
-    public String frontloginstu(@RequestBody StuBean user){
+    public StuBean frontloginstu(@RequestBody StuBean user){
         System.out.println(user.getStu_name()+ " " +user.getStu_password());
         StuBean temp = searchService.stulogin(user.getStu_name(), user.getStu_password());
-        System.out.println(temp.getStu_id());
-        return "success";
+        return temp;
     }
     @CrossOrigin
     @RequestMapping(value = "logintea", method = RequestMethod.POST)
@@ -50,7 +49,7 @@ public class LoginController {
     public String frontlogintea(@RequestBody TeaBean user){
         System.out.println(user.getTea_name()+ " " +user.getTea_password());
         TeaBean temp = searchService.tealogin(user.getTea_name(), user.getTea_password());
-        System.out.println(temp.getTea_id());
+//        System.out.println(temp.getTea_id());
         return "success";
     }
 }
