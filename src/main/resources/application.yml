@@ -11,7 +11,7 @@ spring:
     name: mywebpage
     url: jdbc:mysql://localhost:3306/mywebpage
     username: root
-    password: azsx18327946
+    password: xxx
     driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
 
 mybatis:
